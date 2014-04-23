@@ -1,3 +1,4 @@
+import datetime
 from ford_fulkerson import *
 
 g = FlowNetwork()
@@ -11,4 +12,7 @@ g.add_edge('p','r',2)
 g.add_edge('r','t',3)
 g.add_edge('q','r',4)
 g.add_edge('q','t',2)
-print g.max_flow('s','t')
+a = datetime.datetime.now()
+print "Max Flow: ",g.max_flow('s','t')
+b = datetime.datetime.now()
+print "Time taken: ",(b-a)
