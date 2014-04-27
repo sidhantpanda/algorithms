@@ -13,6 +13,7 @@ g.add_edge('r','t',3)
 g.add_edge('q','r',4)
 g.add_edge('q','t',2)
 a = datetime.datetime.now()
-print "Max Flow: ",g.max_flow('s','t')
+k = g.max_flow('s','t')
+print "Max Flow: ", k
 b = datetime.datetime.now()
 print "Time taken: ",(b-a)
